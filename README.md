@@ -1,7 +1,7 @@
 # Desafio RD - Automação Mobile
 
 Cenários de teste para automação do app que está na pasta .apk deste projeto.
-A documentação deste projeto foi feita considerando que quem for rodar o projeto já está ciente de como preparar o 
+A documentação deste projeto foi feita considerando que quem for rodá-lo está ciente de como preparar o 
 ambiente, bastando informar os pré-requisitos.
 
 
@@ -10,7 +10,7 @@ ambiente, bastando informar os pré-requisitos.
 - GIT: https://git-scm.com/download/win
 - Python: https://www.python.org/downloads/
 - Android Studio (emulador): https://developer.android.com/studio
-- NodeJS: https://nodejs.org/pt-br/download
+- NodeJS (Appium): https://nodejs.org/pt-br/download
 - Appium: https://appium.io/
 - Allure para o report: https://github.com/allure-framework/allure2/releases
 - Configuração do Allure: https://docs.qameta.io/allure/#_get_started
