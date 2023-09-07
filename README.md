@@ -25,9 +25,14 @@ Faça as instalações das libs pelo pipenv: ``pipenv install``
 Inicie um emulador no Android Studio e instale o _.apk_        
 
 ### Iniciando os Cenários
-Inicie o Appium Server através de um outro terminal  
-No terminal que o ambiente virtual do Pipenv foi executado rode o comando abaixo para executar os testes
+Abra um terminal e inicie o Appium Server: ``appium``  
+Em um segundo terminal inicie o emulador do Android Studio: ``emulator -avd nome_do_emulador``
+>*Nota*: Caso não tenha configurado corretamente o Android Studio e suas variáveis de ambiente, 
+> basta abri-lo e iniciar o emulador através dele.  
  
+Em um terceiro terminal onde o ambiente virtual do _Pipenv_ foi iniciado com as libs instaladas, 
+rode o comando abaixo para executar os testes
+
 Os parâmetros deste comando são:\
 ``--lang=pt``: língua utilizada nos arquivos ``.feature``\
 ``-f allure_behave.formatter:AllureFormatter``: formato que vamos utilizar na saída (_Allure Framework_)\
