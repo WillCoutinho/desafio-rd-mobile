@@ -15,18 +15,18 @@ class LoginPage(SeleniumDriver):
     logged_message_txt = "//android.widget.TextView[@text='You are now logged in']"
     login_title = "//android.widget.TextView[@text='Login']"
 
-    def _fill_email_field(self, email):
+    def fill_email_field(self, email):
         self.insert_data_into_element(email, self.email_field, locator_type="id")
 
-    def _fill_password_field(self, senha):
+    def fill_password_field(self, senha):
         self.insert_data_into_element(senha, self.password_field, locator_type="id")
 
     def click_login_button(self):
         self.click_element(self.login_button, locator_type='id')
 
     def login(self, email, password):
-        self._fill_email_field(email)
-        self._fill_password_field(password)
+        self.fill_email_field(email)
+        self.fill_password_field(password)
 
     def login_message(self):
         return self.get_element(self.logged_message_txt, locator_type='xpath').text
